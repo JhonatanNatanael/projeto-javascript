@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laço de repetição</title>
+</head>
+<body>
+    <link rel="stylesheet" href="style.css">
+    <div class="menu">
+        <ul>
+            <li><a class="javascript" href="index.html">Javascript</a></li>
+            <li><a class="variaveis" href="variaveis.html">Variáveis</a></li>
+            <li><a class="objetos" href="objetos.html">Objetos</a></li>
+            <li><a class="decisao" href="decisao.html">Decisão</a></li>
+        </ul>
+    </div>
+
+    <div class="subtit">
+        <span>L</span>
+        <span>a</span>
+        <span>ç</span>
+        <span>o</span>
+        <span>s</span>
+        <span>_</span>
+        <span>d</span>
+        <span>e</span>
+        <span>_</span>
+        <span>r</span>
+        <span>e</span>
+        <span>p</span>
+        <span>e</span>
+        <span>t</span>
+        <span>i</span>
+        <span>ç</span>
+        <span>ã</span>
+        <span>o</span>
+    </div>
+
+
+<div class="divoq">
+
+    <h2 class="oq">While</h2>
+    <p class="poq"> - Executa um bloco de código enquanto uma condição for verdadeira.</p>
+    
+</div>
+<div class="divoq2">
+
+    <h2 class="oq2">Exemplos</h2><br>
+    <p>
+        <table>
+
+        <th class="exs"><br><strong class="ex">Exemplo 1:</strong><br>
+        <code>
+            let i = 0;<br>
+            while (i < 5) {<br>
+            &nbsp;&nbsp;console.log(i);<br>
+            &nbsp;&nbsp;i++;<br>
+            }<br><br>
+            Saída: 0, 1, 2, 3, 4
+        </code><br><br>
+        </th>
+       
+    
+        <th class="exs"><strong class="ex">Exemplo 2:</strong><br>
+        <code>
+            
+            let num = 10;<br>
+            while (num > 0) {<br>
+            &nbsp;&nbsp;console.log(num);<br>
+            num -= 2;<br>
+            }<br><br>
+            Saída: 10, 8, 6, 4, 2
+        </code>
+        </th>
+        </table>
+    </p>
+</div>
+
+<div class="divoq">
+
+    <h2 class="oq">For</h2>
+    <p class="poq"> - Executa um bloco de código um número específico de vezes de acordo com uma condição estabelecida.</p>
+    
+</div>
+<div class="divoq2">
+
+    <h2 class="oq2">Exemplos</h2><br>
+    <p>
+        <table>
+
+        <th class="exs"><br><strong class="ex">Exemplo 1:</strong><br>
+        <code>
+            for (let i = 0; i < 5; i++) {<br> 
+            console.log(i);<br>
+            }<br><br>
+            Saída: 0, 1, 2, 3, 4
+        </code><br><br>
+        </th>
+       
+    
+        <th class="exs"><strong class="ex">Exemplo 2:</strong><br>
+        <code>
+            const frutas = ["maçã", "banana", "uva"];<br>
+            for (let i = 0; i < frutas.length; i++) {<br> 
+            console.log(frutas[i]);<br>
+            }<br><br>
+            Saída: "maçã", "banana", "uva"
+
+        </code>
+        </th>
+        </table>
+    </p>
+</div>
+
+<div class="divoq">
+
+    <h2 class="oq">.map</h2>
+    <p class="poq"> - Transforma cada elemento do array e retorna um novo array com os elementos transformados.</p>
+    
+</div>
+
+<div class="divoq2">
+
+    <h2 class="oq2">Exemplos</h2><br>
+    <p>
+        <table>
+
+        <th class="exs"><br><strong class="ex">Exemplo 1:</strong><br>
+        <code>
+            const numeros = [1, 2, 3];<br>
+            const dobrados = numeros.map(num => num * 2);<br>
+            console.log(dobrados);<br><br>
+            Saída: [2, 4, 6]
+
+        </code><br><br>
+        </th>
+       
+    
+        <th class="exs"><strong class="ex">Exemplo 2:</strong><br>
+        <code>
+            const nomes = ["Ana", "Beto", "Carla"];<br>
+            const cumprimentos = nomes.map(nome => `Olá, ${nome}!`);<br>
+            console.log(cumprimentos);<br><br>
+            Saída: ["Olá, Ana!", "Olá, Beto!", "Olá, Carla!"]<br><br>
+
+        </code>
+        </th>
+        </table>
+    </p>
+</div>
+
+<div class="divoq">
+
+    <h2 class="oq">.filter</h2>
+    <p class="poq"> - Filtra elementos de um array de acordo com uma condição e retorna um novo array com os elementos que atendem à condição.</p>
+    
+</div>
+
+<div class="divoq2">
+
+    <h2 class="oq2">Exemplos</h2><br>
+    <p>
+        <table>
+
+        <th class="exs"><br><strong class="ex">Exemplo 1:</strong><br>
+        <code>
+            const numeros = [1, 2, 3, 4, 5];<br>
+            const pares = numeros.filter(num => num % 2 === 0);<br>
+            console.log(pares);<br><br>
+            Saída: [2, 4]
+
+        </code><br><br>
+        </th>
+       
+    
+        <th class="exs"><strong class="ex">Exemplo 2:</strong><br>
+        <code>
+            const palavras = ["árvore", "flor", "sol", "lua"];<br>
+            const palavrasComO = palavras.filter(palavra => palavra.includes("o"));<br>
+            console.log(palavrasComO);<br><br>
+            Saída: ["árvore", "flor", "sol"]
+
+        </code>
+        </th>
+        </table>
+    </p>
+</div>
+
+<!-- Não modificar daqui para cima -->
+
+
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

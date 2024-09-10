@@ -1,0 +1,299 @@
+
+/* Não modificar nada */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight:400;
+    font-style: normal;
+    color: #ffffff;
+}
+
+/* Estilos da barra de navegação */
+.menu {
+    background-color: #000000;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+ul li {
+    display: inline-block;
+    padding: 20px;
+    font-size: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #d47d0a;
+}
+
+/* Underline links de navegação */
+
+.menu a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: rgb(255, 140, 0);
+    transition: width 0.1s ease;
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+
+.tit {
+    background-color: #1c1a1a;
+    height: 99vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.tit span{
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color:#dc7226;
+    font-size: 90px;
+    
+    animation: vulto 3.5s ease-in-out infinite;
+}
+
+.tit span:nth-last-of-type(1){
+    animation-delay:1.34s;
+}
+.tit span:nth-last-of-type(2){
+    animation-delay:1.33s;
+}
+.tit span:nth-last-of-type(3){
+    animation-delay:1.32s;
+}
+.tit span:nth-last-of-type(4){
+    animation-delay:1.31s;
+}
+.tit span:nth-last-of-type(5){
+    animation-delay:1.30s;
+}
+.tit span:nth-last-of-type(6){
+    animation-delay:1.29s;
+}
+.tit span:nth-last-of-type(7){
+    animation-delay:1.28s;
+}
+.tit span:nth-last-of-type(8){
+    animation-delay:1.27s;
+}
+.tit span:nth-last-of-type(9){
+    animation-delay:1.26s;
+}
+.tit span:nth-last-of-type(10){
+    animation-delay:1.25s;
+}
+
+
+@keyframes vulto {
+
+    50%{
+      color: #fefff7;
+      text-shadow:0 0 25px #d7b375, 0 0 50px #e2c98478, 0 0 100px #fdfdfd;
+
+
+    }
+    1%{
+      color:#fff958f7;
+      text-shadow: none;
+
+    }
+    
+}
+
+
+.subtit {
+    background-color: #1c1a1a;
+    height: 99vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.subtit span{
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color:#dc7226;
+    font-size: 80px;
+    
+    animation: vulto2 3s ease-in-out infinite;
+}
+
+.subtit span:nth-last-of-type(1){
+    animation-delay:0.50s;
+}
+.subtit span:nth-last-of-type(2){
+    animation-delay:0.25s;
+}
+.subtit span:nth-last-of-type(3){
+    animation-delay:0.50s;
+}
+.subtit span:nth-last-of-type(4){
+    animation-delay:0.25s;
+}
+.subtit span:nth-last-of-type(5){
+    animation-delay:0.50s;
+}
+.subtit span:nth-last-of-type(6){
+    animation-delay:0.25s;
+}
+.subtit span:nth-last-of-type(7){
+    animation-delay:0.50s;
+}
+.subtit span:nth-last-of-type(8){
+    animation-delay:0.25s;
+}
+.subtit span:nth-last-of-type(9){
+    animation-delay:0.50s;
+}
+.subtit span:nth-last-of-type(10){
+    animation-delay:0.25s;
+}
+.subtit span:nth-last-of-type(11){
+    animation-delay:0.50s;
+}
+.subtit span:nth-last-of-type(12){
+    animation-delay:0.25s;
+}
+.subtit span:nth-last-of-type(13){
+    animation-delay:0.50s;
+}
+.subtit span:nth-last-of-type(14){
+    animation-delay:0.25s;
+}
+.subtit span:nth-last-of-type(15){
+    animation-delay:0.50s;
+}
+.subtit span:nth-last-of-type(16){
+    animation-delay:0.25s;
+}
+.subtit span:nth-last-of-type(17){
+    animation-delay:0.50s;
+}
+.subtit span:nth-last-of-type(18){
+    animation-delay:0.25s;
+}
+
+@keyframes vulto2 {
+
+    0%{
+      color: #fefff7;
+      text-shadow:0 0 25px #d7b375, 0 0 50px #e2c98478, 0 0 100px #fdfdfd;
+
+
+    }
+    0%{
+      color:#fff958f7;
+      text-shadow: none;
+
+    }
+    
+}
+
+.divoq{
+    background-color: black;
+    height: 30vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.oq{
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 50;
+    font-style: normal;
+    color:#dc7226;
+    font-size: 60px;
+    margin: 0;
+}
+.poq{
+    color: #fff; 
+    margin-top: 20px; 
+    font-size: 18px; 
+}
+
+.divoq2{
+    background-color: black;
+    height: auto;
+    min-height: 60vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+    padding: 0 20px;
+
+}
+
+.divoq2 p {
+    text-align: center; /* Alinhamento do texto à esquerda */
+    margin: 0; /* Remove margens padrão se necessário */
+    padding: 0; /* Remove padding se necessário */
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+
+.oq2{
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 50;
+    font-style: normal;
+    color:#dc7226;
+    font-size: 50px;
+    margin: 0;
+}
+
+.ex{
+    font-weight: bold; /* Garante que o texto seja negrito */
+    font-size: 18px; /* Define o tamanho da fonte */
+    color: #fff; /* Define a cor do texto */
+    display: block; /* Faz com que cada título ocupe uma nova linha */
+    margin-top: 10px; /* Adiciona espaçamento acima do título */
+}
+
+.exs{
+    text-align: center;
+    align-items: center;
+    width: 50%; /* Cada coluna ocupa 50% da largura da tabela */
+    padding: 10px; /* Adiciona um pouco de espaço ao redor do conteúdo */
+    border: 1px solid #ccc; /* Adiciona borda para visualização */
+    text-align: center;
+}
+
+/* Não modificar nada */
