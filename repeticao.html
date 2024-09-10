@@ -187,7 +187,219 @@
     </p>
 </div>
 
-<!-- Não modificar daqui para cima -->
+<div class="divoq">
+
+    <h2 class="oq">for of (iterable) array </h2>
+    <p class="poq"> - irá percorrer cada elemento do objeto iterável, atribuindo o valor de cada elemento a uma variável que você definir.</p>
+    
+</div>
+
+<div class="divoq2">
+
+    <h2 class="oq2">Exemplos</h2><br>
+    <p>
+        <table>
+
+        <th class="exs"><br><strong class="ex">Exemplo 1:</strong><br>
+        <code>
+            const frutas = ['maçã', 'banana', 'laranja']; <br>
+
+            for (let fruta of frutas){<br> 
+              console.log(fruta);
+            }
+
+        </code><br><br>
+        </th>
+       
+    
+        <th class="exs"><strong class="ex">Exemplo 2:</strong><br>
+        <code>
+            const tarefas = ['Lavar a louça', 'Passar roupa', 'Estudar JavaScript', 'Fazer compras']; <br>
+            for (let tarefa of tarefas) {<br>
+                console.log(tarefa);
+              }
+
+        </code>
+        </th>
+        </table>
+    </p>
+</div>
+
+<div class="divoq">
+
+    <h2 class="oq">String</h2>
+    <p class="poq"> - É uma cadeia de carácteres alfanúmericos. .</p>
+    <p class="poq"> - Deve ser declarada entre aspas duplas ou simples.</p>
+    
+</div>
+
+<div class="divoq2">
+
+    <h2 class="oq2">Exemplos</h2><br>
+    <p>
+        <table>
+
+        <th class="exs"><br><strong class="ex">Exemplo 1:</strong><br>
+        <code>
+            let nome = "Maria"; <br>
+            let frase = 'Hoje é um dia lindo!'; <br>
+            let caminho = `C:\Users\usuario\Documentos`; <br>
+
+        </code><br><br>
+        </th>
+       
+    
+        <th class="exs"><strong class="ex">Exemplo 2:</strong><br>
+        <code>
+            let parte1 = "Olá, "; <br>
+            let parte2 = "mundo!"; <br>
+            let fraseCompleta = parte1 + parte2;
+
+        </code>
+        </th>
+        </table>
+    </p>
+</div>
+
+<div class="divoq">
+
+    <h2 class="oq">.redunce </h2>
+    <p class="poq"> Esses exemplos mostram como *reduce* pode ser usado para tarefas comuns,<br>
+         como contagem de elementos e encontrar o valor máximo em um array.</p>   
+</div>
+
+<div class="divoq2">
+
+    <h2 class="oq2">Exemplos</h2><br>
+    <p>
+        <table>
+
+        <th class="exs"><br><strong class="ex">Exemplo 1:</strong><br>
+        <code>
+            const fruits = ['apple', 'banana', 'apple', 'orange', 'banana', 'banana'];<br>
+            const frequency = fruits.reduce((accumulator, fruit) => {<br>
+                if (accumulator[fruit]) {<br>
+                  accumulator[fruit]++;<br>
+                } else {<br>
+                  accumulator[fruit] = 1;<br>
+                }<br>
+                return accumulator;<br>
+              }, {});<br>
+              console.log(frequency);<br>
+
+        </code><br><br>
+        </th>
+       
+        <th class="exs"><strong class="ex">Exemplo 2:</strong><br>
+        <code>
+            const numbers = [3, 5, 7, 2, 8, 1, 4];<br>
+
+            const max = numbers.reduce((maxValue, currentValue) => {<br>
+            return currentValue > maxValue ? currentValue : maxValue;<br>
+            }, numbers[0]);<br>
+
+            console.log(max);<br>
+        </code>
+        </th>
+        </table>
+    </p>
+</div>
+
+<div class="divoq">
+
+    <h2 class="oq">for in </h2>
+    <p class="poq"> Esses exemplos mostram como *for in* pode ser usado para acessar<br>
+         e manipular propriedades de objetos em JavaScript.</p>   
+</div>
+<div class="divoq2">
+
+    <h2 class="oq2">Exemplos</h2><br>
+    <p>
+        <table>
+
+        <th class="exs"><br><strong class="ex">Exemplo 1:</strong><br>
+        <code>
+            const person = {<br>
+                name: 'Maria',<br>
+                age: 24,<br>
+                occupation: 'Engineer'<br>
+              };<br>
+              
+              for (const key in person) {<br>
+                if (person.hasOwnProperty(key)) {<br>
+                  console.log(`${key}: ${person[key]}`);<br>
+                }<br>
+              }<br>
+        </code><br><br>
+        </th>
+       
+        <th class="exs"><strong class="ex">Exemplo 2:</strong><br>
+        <code>
+            const car = {<br>
+                make: 'Toyota',<br>
+                model: 'Camry',<br>
+                year: 2021<br>
+              };<br>
+              
+              let propertyCount = 0;<br>
+              
+              for (const key in car) {<br>
+                if (car.hasOwnProperty(key)) { <br>
+                  propertyCount++;<br>
+                }<br>
+              }<br>
+              
+              console.log(propertyCount);
+              
+        </code>
+        </th>
+        </table>
+    </p>
+</div>
+
+<div class="divoq">
+
+    <h2 class="oq">ForEach </h2>
+    <p class="poq"> Esses exemplos mostram como *ForEach* pode ser usado para executar uma função em cada elemento de um array,<br> 
+        seja para simples operações como impressão ou para operações mais complexas como transformação de dados.
+    </p>   
+</div>
+<div class="divoq2">
+
+    <h2 class="oq2">Exemplos</h2><br>
+    <p>
+        <table>
+
+        <th class="exs"><br><strong class="ex">Exemplo 1:</strong><br>
+        <code>
+            const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];<br>
+
+            numbers.forEach((number) => {<br>
+              console.log(number);<br>
+            });<br>
+            
+        </code><br><br>
+        </th>
+       
+        <th class="exs"><strong class="ex">Exemplo 2:</strong><br>
+        <code>
+            const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];<br>
+            const doubledNumbers = [];<br>
+            
+            numbers.forEach((number) => {<br>
+              doubledNumbers.push(number * 2);<br>
+            });<br>
+            
+            console.log(doubledNumbers);<br>
+            
+              
+        </code>
+        </th>
+        </table>
+    </p>
+</div>
+
+
 
 
 

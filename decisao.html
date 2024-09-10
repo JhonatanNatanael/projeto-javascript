@@ -43,7 +43,7 @@
     <p class="poq">Será usada para testar se a primeira condição for falsa</p>
 </div>
 
-<div class="divo2">
+<div class="divoq2">
     <h2 class="oq2">Exemplos:</h2><br>
     <p>
         <table>
@@ -52,22 +52,103 @@
             <code>
                 let pontos = 90;<br>
                 if (pontos > 95) {<br>
-                console.log("Está na liderança.");<br>
+                &nbsp;&nbsp;console.log("Está na liderança.");<br>
                 } else {<br>
-                console.log("Não está na liderança.");<br>
+                &nbsp;&nbsp;console.log("Não está na liderança.");<br>
                 }
-            </code><br><br>
+            </code>
             </th>
 
-            <th class="exs"><strong class="ex">Exemplo 2:</strong><br>
+            <th class="exs"><br><strong class="ex">Exemplo 2:</strong><br>
             <code>
-
-                
-            </code>
+                et pontos = 100;<br>
+                if (pontos > 90) {<br>
+                &nbsp;&nbsp;console.log("Está no topo.");<br>
+                } else if (pontos > 50) {<br>
+                &nbsp;&nbsp;console.log("Está no meio.");<br>
+                } else {<br>
+                &nbsp;&nbsp;console.log("Está embaixo.");<br>
+                }    
+            </code><br>
             </th>
         </table>
     </p>
 </div>
+
+<div class="divoq">
+    <h2 class="oq">SWITCH</h2>
+    <p class="poq">O switch é uma estrutura de controle que possibilita a execução de diferentes blocos de código dependendo do resultado de uma expressão.</p>
+</div>
+<div class="divoq2">
+    <h2 class="oq2">Exemplos:</h2><br>
+    <p>
+        <table>
+
+            <th class="exs"><br><strong class="ex">Exmplo 1:</strong><br>
+            <code>
+                const veiculo= 1;<br>
+                switch (veiculo) {<br>
+                  case 0:<br>
+                    console.log("carro");<br>
+                    break;<br>
+                  case 1:<br>
+                    console.log("moto");<br>
+                    break;<br>
+                  case 2:<br>
+                    console.log("barco");<br>
+                    break;<br>
+                  case 3:<br>
+                    console.log(avião);<br>
+                    break;<br>
+                  default:<br>
+                    console.log("veículo inválido");<br>
+                }
+                
+            <th class="exs"><br><strong class="ex">Exemplo 2:</strong><br>
+            <code>
+                const nota = 5;<br>
+                switch (true) {<br>
+                case (nota >= 6):<br>
+                console.log("aprovado!);<br>
+                break; <br>
+                default:<br>
+                console.log('Reprovado');<br>
+                }  
+            </code><br>
+            </th>
+        </table>
+    </p>
+</div>
+<div class="divoq">
+    <h2 class="oq">OPERADOR TERNÁRIO</h2>
+    <p class="poq">O operador ternário é uma forma abreviada do if...else,<br>
+         ideal para situações em que você precisa definir valores ou realizar pequenas operações com base em uma condição específica.
+    </p>
+</div>
+<div class="divoq2">
+    <h2 class="oq2">Exemplos:</h2><br>
+    <p>
+        <table>
+
+            <th class="exs"><br><strong class="ex">Exmplo 1:</strong><br>
+            <code>
+                let duracao = 50;<br>
+                let serie = "gray`s Anatomy";<br>
+                let tipoEpisodio = (duracao <= 30) ? "curto" : "longo";<br>
+                console.log(`O episódio de ${serie} é ${tipoEpisodio}.`);<br>
+
+            <th class="exs"><br><strong class="ex">Exemplo 2:</strong><br>
+            <code>
+                let classificacao = 18;<br>
+                let filme = "deadpool";<br>
+                let mensagem = (classificacao <= 12) ? `${filme} é adequado para crianças.` : `${filme} não é adequado para crianças.`;<br>
+                console.log(mensagem);<br>   
+            </code><br>
+            </th>
+        </table>
+    </p>
+</div>
+
 
 
 

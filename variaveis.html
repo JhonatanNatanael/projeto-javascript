@@ -29,7 +29,117 @@
     </div>
 
 <!-- Não modificar daqui para cima -->
+<div class="divoq">
 
+    <h2 class="oq">Var</h2>
+    <p class="poq"> - Pode ser utilizada dentro de uma função, em programas que não suportam ES6.<br>
+    Esta variável está em desuso depois da introdução de let e const.</p>
+    
+</div>
+<div class="divoq2">
+
+    <h2 class="oq2">Exemplos</h2><br>
+    <p>
+        <table>
+
+        <th class="exs"><br><strong class="ex">Exemplo 1:</strong><br>
+        <code>
+            var nome= "Beatriz";<br>
+            &nbsp;&nbsp;console.log(nome);
+            <br><br>
+            Saída: Beatriz
+        </code><br><br>
+        </th>
+       
+    
+        <th class="exs"><strong class="ex">Exemplo 2:</strong><br>
+        <code>
+            
+            var idade= 25;<br>
+            &nbsp;&nbsp;console.log(idade);<br><br>
+            Saída: 25
+        </code>
+        </th>
+        </table>
+    </p>
+</div>
+
+<div class="divoq">
+
+    <h2 class="oq">Let</h2>
+    <p class="poq"> -  Let foi introduzido no JavaScript como uma alternativa para var. Pode ser utilizada<br>
+     dentro de um bloco, com uma condição ou um loop. É recomendado <br>
+    usar let para evitar erros no código.</p>
+    
+</div>
+<div class="divoq2">
+
+    <h2 class="oq2">Exemplos</h2><br>
+    <p>
+        <table>
+
+        <th class="exs"><br><strong class="ex">Exemplo 1:</strong><br>
+        <code>
+            for (let i=0; i < 7; i++) {<br>
+            &nbsp;&nbsp;console.log(i);<br>
+            }
+            <br><br>
+            Saída: 0, 1, 2, 3, 4, 5, 6
+        </code><br><br>
+        </th>
+       
+    
+        <th class="exs"><strong class="ex">Exemplo 2:</strong><br>
+        <code>
+            let count= 20;<br>
+            console.log(count);<br><br>
+            count= 30;<br>
+            console.log(count);<br>
+            Saída: 20, 30
+        </code><br>
+        </th>
+        </table>
+    </p>
+</div>
+
+<div class="divoq">
+
+    <h2 class="oq">Const</h2>
+    <p class="poq"> - É usado para declarar uma variável que não pode ser declarada de outra forma<br>
+         depois. Const pode ser colocada em um bloco no código.</p>
+    
+</div>
+<div class="divoq2">
+
+    <h2 class="oq2">Exemplos</h2><br>
+    <p>
+        <table>
+
+        <th class="exs"><br><strong class="ex">Exemplo 1:</strong><br>
+        <code>
+            const arr1 = ["história", "matemática", "geografia", "biologia"];<br>
+            &nbsp;&nbsp;console.log(arr1.toString());<br>
+            arr1[2] = "física";<br>
+            &nbsp;&nbsp;console.log(arr1.toString());<br><br>
+            Saída: história, matemática, geografia, biologia<br>
+                   história, matemática, física, biologia
+        </code><br><br>
+        </th>
+       
+    
+        <th class="exs"><strong class="ex">Exemplo 2:</strong><br>
+        <code>
+            const mult = 5;<br>
+            function multiplyByConst(value) {<br>
+            return value * mult;<br>
+            }<br>
+            &nbsp;&nbsp;console.log(multiplyByConst(8));<br><br>
+            Saída: 40
+        </code>
+        </th>
+        </table>
+    </p>
+</div>
 
 
 
