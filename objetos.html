@@ -27,48 +27,39 @@
     </div>
 
 <!-- Não modificar daqui para cima -->
-<div class="divoq">
 
-    <h2 class="oq">JS objetos</h2>
-    <p class="poq"> - Os objetos são caixas de dados, que possuem propriedades e valores. Em que cada propriedade é um atributo do objeto, por exemplo: nome, idade e etc. <br> Já os valores são os conteúdos</p>
+<div class="divoqobj"></div>
+
+    <h2 class="oq">JS Objects</h2>
+    <p class="poq"> - Os objetos são caixas de dados, que possuem propriedades e valores. Em que cada propriedade é um atributo do objeto, por exemplo: nome, idade e etc. <br> - Já os valores são os conteúdos. </p>
     
-    <table>
+</div>
+<div class="divoq2">
+
+    <h2 class="oq2">Exemplos</h2><br>
+    <p>
+        <table>
 
         <th class="exs"><br><strong class="ex">Exemplo 1:</strong><br>
         <code>
             let maçã = { 
                 cor: "verde", 
                 sabor: "adocicado"
-            };
-        </code><br><br>
-        </th>
-    </table>
-</div>
-<div class="divoq">
-
-    <h2 class="oq">JS objetos properties</h2>
-    <p class="poq"> -As propriedades são atributos relacionados ao objeto. </p>
-    <p class="poq"> - As propriedades possuem nomes (strings), que servem para identificar os conjuntos de dados.</p>
-    
-</div>
-
-<div class="divoq2">
-
-    <h3 class="oq2">Para acessar as propriedades temos as seguintes sintaxes:</h3><br>
-    <p>
-        <table>
-
-        <th class="exs"><br><strong class="ex">Exemplo 1:</strong><br>
-        <code>
-            <!-- objectName.property -->
-             console.log(maçã.cor);
+            }
         </code><br><br>
         </th>
        
+    
         <th class="exs"><strong class="ex">Exemplo 2:</strong><br>
         <code>
-           <!-- objectName["property"] -->
-            console.log(maçã["cor"]);
+            const pessoa = {<br>
+                nome: "Ana",<br>
+                idade: 25<br>
+            };<br>
+            console.log(pessoa.nome);<br>
+            console.log(pessoa.idade);<br><br>
+            Saída: Ana  /  25
+            
         </code>
         </th>
         </table>
@@ -76,26 +67,213 @@
 </div>
 
 <div class="divoq">
-    <h2 class="oq"> Relacionado a propriedade: </h3>
+
+    <h2 class="oq"> JS objects Properties</h2>
+    <p class="poq"> - As propriedades são atributos relacionados ao objeto.<br>
+         - As propriedades possuem nomes (strings), que servem para identificar os conjuntos de dados.</p>
+
 </div>
 <div class="divoq2">
 
+    <h2 class="oq2">Para acessar as propriedades temos as seguintes sintaxes:</h2><br>
+    <p>
+        <table>
+
+        <th class="exs"><br><strong class="ex">Exemplo 1:</strong><br>
+        <code>
+           <!-- objectName.property -->
+           console.log(maçã.cor);
+        </code><br><br>
+        </th>
+       
+    
+        <th class="exs"><strong class="ex">Exemplo 2:</strong><br>
+        <code>
+            <!-- objectName["property"] -->
+            console.log(maçã["cor"]);
+        </code>
+        </th>
+        </table>
+    </p>
+</div>
+
+<div class="divoqobj">
+
+    <h2 class="oq">Relacionado a propriedade:</h2>
+   
+    
+</div>
+
+<div class="divoq2obj">
+
+    <h2 class="oq2">Exemplos</h2><br>
+    <p>
         <table>
 
         <th class="exs"><br><strong class="ex">Para adicionar propriedade:</strong><br>
         <code>
             maçã.textura = "lisa";
+
         </code><br><br>
         </th>
-<th class="exs"><strong class="ex">Para alterar o valor:</strong><br>
-            <code>
-             maçã.cor = "azul";
-            </code>
-            </th>
+       
+    
+        <th class="exs"><strong class="ex">Para alterar o valor:</strong><br>
+        <code>
+            maçã.cor = "azul";
+
+        </code>
+        </th>
         </table>
+    </p>
+</div>
+
+<div class="divoq">
+
+    <h2 class="oq">JS Object Methods</h2>
+    <p class="poq"> - É uma função que é definida dentro de um objeto.<br> - Os métodos são usados para realizar ações com os dados do objeto. </p>
     
 </div>
 
+<div class="divoq2obj">
+
+    <h2 class="oq2">Exemplos</h2><br>
+    <p>
+        <table>
+
+        <th class="exs"><br><strong class="ex">Exemplo 1:</strong><br>
+        <code>
+            const pessoa = {<br>
+                nome: "Carlos", <br>
+                saudacao: function() { <br>
+                  return Olá, meu nome é ${this.nome}!; <br>
+                }<br>
+            };<br>
+
+              console.log(pessoa.saudacao());<br><br>
+              Saída: Olá, meu nome é Carlos!
+
+        </code><br><br>
+        </th>
+       
+    
+        <th class="exs"><strong class="ex">Exemplo 2:</strong><br>
+        <code>
+            const carro = { <br>
+                marca: "Ford", <br>
+                modelo: "Mustang", <br>
+                detalhes: function() { <br>
+                  return Carro: ${this.marca} ${this.modelo}; <br>
+                }<br>
+            }; <br>
+              
+              console.log(carro.detalhes());<br><br>
+              Saída: Carro: Ford Mustang 
+
+        </code>
+        </th>
+        </table>
+    </p>
+</div>
+
+<div class="divoq">
+
+<h2 class="oq">JS Object Display </h2>
+    <p class="poq"> - Exibe um objeto e mostra seu conteúdo.<br> - No JavaScript, a maneira mais comum de exibir um objeto é usando o console.log() ou convertendo-o para uma string JSON. </p>
+    
+</div>
+
+<div class="divoq2">
+
+    <h2 class="oq2">Exemplos</h2><br>
+    <p>
+        <table>
+
+        <th class="exs"><br><strong class="ex">Exemplo 1:</strong><br>
+        <code>
+            const carro = {<br>
+                marca: "Honda"<br>
+                modelo: "Civic"<br>
+            };<br>
+              
+              console.log(carro); <br>
+              console.log(JSON.stringify(carro)); <br><br>
+              Saída: { marca: 'Honda', modelo: 'Civic' }  /  {"marca":"Honda","modelo":"Civic"}
+
+        </code><br><br>
+        </th>
+       
+    
+        <th class="exs"><strong class="ex">Exemplo 2:</strong><br>
+        <code>
+            const produto = {<br>
+                nome: "Notebook",<br>
+                preco: 3000<br>
+            };<br>
+              
+              console.log(produto);<br><br>
+              Saída: { nome: 'Notebook', preco: 3000 }
+
+        </code>
+        </th>
+        </table>
+    </p>
+</div>
+
+
+<div class="divoq">
+
+    <h2 class="oq">JS Object Constructors </h2>
+        <p class="poq"> - É uma função usada para criar objetos.<br> - Construtores permitem criar múltiplos objetos semelhantes de forma eficiente.  </p>
+        
+    </div>
+    
+    <div class="divoq2obj">
+    
+        <h2 class="oq2">Exemplos</h2><br>
+        <p>
+        <table>
+    
+        <th class="exs"><br><strong class="ex">Exemplo 1:</strong><br>
+        <code>
+            function Pessoa(nome, idade) {<br>
+                this.nome = nome;<br>
+                this.idade = idade;<br>
+            }<br>
+                  
+                const pessoa1 = new Pessoa("Maria", 28);<br>
+                const pessoa2 = new Pessoa("João", 35);<br>
+                  
+                console.log(pessoa1.nome);<br>
+                console.log(pessoa2.idade);<br><br>
+                Saída: Maria  /  35
+    
+        </code><br><br>
+        </th>
+           
+        
+        <th class="exs"><strong class="ex">Exemplo 2:</strong><br>
+        <code>
+            function Animal(tipo, som) {<br>
+                this.tipo = tipo;<br>
+                this.som = som;<br>
+            }<br>
+                  
+            const cachorro = new Animal("Cachorro", "Latido");<br>
+            const gato = new Animal("Gato", "Miau");<br>
+                  
+            console.log(cachorro.som);<br>
+            console.log(gato.tipo);<br><br>
+            Saída: Latido  /  Gato
+    
+        </code>
+        </th>
+        </table>
+        </p>
+    </div>
+
+    
+    <script src="script.js"></script>
 
 
 </body>

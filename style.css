@@ -1,4 +1,3 @@
-
 /* Não modificar nada */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
@@ -229,6 +228,17 @@ ul li a {
     padding: 20px;
 }
 
+.divoqobj{
+    background-color: black;
+    height: 8vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
 .oq{
     font-family: "Roboto Slab", serif;
     font-optical-sizing: auto;
@@ -237,11 +247,13 @@ ul li a {
     color:#dc7226;
     font-size: 60px;
     margin: 0;
+    text-align:center;
 }
 .poq{
     color: #fff; 
     margin-top: 20px; 
     font-size: 18px; 
+    text-align: center;
 }
 
 .divoq2{
@@ -255,6 +267,18 @@ ul li a {
     text-align: left;
     padding: 0 20px;
 
+}
+
+.divoq2obj{
+    background-color: black;
+    height: auto;
+    min-height: 50vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+    padding: 0 20px;
 }
 
 .divoq2 p {

@@ -3,4 +3,5 @@
 # Alyce Costa de Oliveira
 # Felipe da Silva Paschoal
 # Maria Nicole Bruce Gomes
-# João Gabriel Gomes de Lima  
+# João Gabriel Gomes de Lima
+# Alexandre Lima Araújo 
